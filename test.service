@@ -1,7 +1,7 @@
 [Unit]
-Description=smart_home_http_server
+Description=test
 [Service]
-ExecStart=/tmp/test.sh
+ExecStart=/bin/sh /tmp/test.sh
 SyslogIdentifier=xively
 Restart=on-failure
 RestartSec=5
