@@ -1,0 +1,10 @@
+[Unit]
+Description=smart_home_http_server
+[Service]
+ExecStart=/tmp/test.sh
+SyslogIdentifier=xively
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
