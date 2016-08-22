@@ -1,0 +1,11 @@
+[Unit]
+Description=httpd_service
+
+[Service]
+ExecStart=/root/smart_home/httpd
+SyslogIdentifier=xively
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
